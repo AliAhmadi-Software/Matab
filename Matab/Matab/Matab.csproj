@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75F37006-D943-4D22-A7FD-B4DCD6F1116A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Matab</RootNamespace>
+    <AssemblyName>Matab</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.35, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\DevComponents.DotNetBar.14.1.0.35\Crack\Cracked_Dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2017.1.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
+    <Reference Include="Stimulsoft.Controls.Win, Version=2017.1.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2017.1.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
+    <Reference Include="Stimulsoft.Report.Win, Version=2017.1.3.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VistaClockPersian">
+      <HintPath>..\..\VistaClockPersian.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActivity.Designer.cs">
+      <DependentUpon>FrmActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackup.Designer.cs">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCostMatab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCostMatab.Designer.cs">
+      <DependentUpon>FrmCostMatab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFile.Designer.cs">
+      <DependentUpon>FrmFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGavahi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGavahi.Designer.cs">
+      <DependentUpon>FrmGavahi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfo.Designer.cs">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInsurance.Designer.cs">
+      <DependentUpon>FrmInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKarbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKarbar.Designer.cs">
+      <DependentUpon>FrmKarbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListCost.Designer.cs">
+      <DependentUpon>FrmListCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListFile.Designer.cs">
+      <DependentUpon>FrmListFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListMonshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListMonshi.Designer.cs">
+      <DependentUpon>FrmListMonshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListVisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListVisit.Designer.cs">
+      <DependentUpon>FrmListVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogo.Designer.cs">
+      <DependentUpon>frmlogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonshi.Designer.cs">
+      <DependentUpon>FrmMonshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNobat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNobat.Designer.cs">
+      <DependentUpon>FrmNobat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaylist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaylist.Designer.cs">
+      <DependentUpon>FrmPaylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServiceMatab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServiceMatab.Designer.cs">
+      <DependentUpon>FrmServiceMatab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVisit.Designer.cs">
+      <DependentUpon>FrmVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmActivity.resx">
+      <DependentUpon>FrmActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackup.resx">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCostMatab.resx">
+      <DependentUpon>FrmCostMatab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFile.resx">
+      <DependentUpon>FrmFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGavahi.resx">
+      <DependentUpon>FrmGavahi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInfo.resx">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInsurance.resx">
+      <DependentUpon>FrmInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKarbar.resx">
+      <DependentUpon>FrmKarbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListCost.resx">
+      <DependentUpon>FrmListCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListFile.resx">
+      <DependentUpon>FrmListFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListMonshi.resx">
+      <DependentUpon>FrmListMonshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListVisit.resx">
+      <DependentUpon>FrmListVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogo.resx">
+      <DependentUpon>frmlogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonshi.resx">
+      <DependentUpon>FrmMonshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNobat.resx">
+      <DependentUpon>FrmNobat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaylist.resx">
+      <DependentUpon>FrmPaylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServiceMatab.resx">
+      <DependentUpon>FrmServiceMatab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVisit.resx">
+      <DependentUpon>FrmVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لوگو.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
